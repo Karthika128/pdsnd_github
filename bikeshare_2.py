@@ -51,6 +51,7 @@ def get_filters():
             day= str(input("Enter the day of week from the list (all, monday, tuesday,wednesday, thursday, friday, saturday, sunday): "))
             print(day)
         except:
+            #checking if it is not a valid day 
             print("Not a valid day. Enter a day as shown in the list.")
         else:
             if day in days:

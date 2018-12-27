@@ -8,7 +8,7 @@ Bikeshare data analysis project
 Analyzed the data about the bikeshare usage in the cities of chicago, washington and new york city  
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
