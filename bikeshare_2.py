@@ -19,6 +19,8 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
+        #while loop to continue until the user entered a valid city
+        #try/except to catch any input exceptions
         try:
             city= str(input("Enter the city name from the list (chicago, new york city ,washington): ")).lower()
             print(city)
@@ -59,7 +61,7 @@ def get_filters():
             else:
                 print("Not a valid day. Enter a day as shown in the list.")
 
-    print('-'*40)
+    print('-'*60)
     return city, month, day
 
 
@@ -96,6 +98,7 @@ def load_data(city, month, day):
    # providing user an option to see raw data 5 lines at a time
     linecount=5
     while True:
+        #while loop to continue until user entered yes or no
         try:
             rawdata = str(input("Do you want to see next 5 lines of filtered raw data?: Enter yes or no.\n"))
             print(rawdata)
@@ -201,7 +204,7 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-
+        #finding the most popular day, month of the bike usage
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
