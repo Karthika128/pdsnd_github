@@ -60,7 +60,7 @@ def get_filters():
             else:
                 print("Not a valid day. Enter a day as shown in the list.")
 
-    print('-'*40)
+    print('-'*60)
     return city, month, day
 
 
@@ -97,6 +97,7 @@ def load_data(city, month, day):
    # providing user an option to see raw data 5 lines at a time
     linecount=5
     while True:
+        #while loop to continue until user entered yes or no
         try:
             rawdata = str(input("Do you want to see next 5 lines of filtered raw data?: Enter yes or no.\n"))
             print(rawdata)
