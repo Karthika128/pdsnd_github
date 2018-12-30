@@ -203,7 +203,7 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-
+        #finding the most popular day, month of the bike usage
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
